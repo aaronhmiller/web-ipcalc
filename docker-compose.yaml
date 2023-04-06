@@ -1,0 +1,10 @@
+version: "3"
+services:
+ ipcalc:
+  image: saltaaron/web-ipcalc:latest
+  restart: unless-stopped
+  container_name: web-ipcalc
+  hostname: web-ipcalc
+  ports:
+   - 80:80
+   - 443:443
